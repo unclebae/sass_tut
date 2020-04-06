@@ -1,0 +1,16 @@
+$alert-bg-color: yellow;
+$alert-color: #c63538;
+$border-color: #555;
+$alert-border: rgba($border-color, 0.88);
+
+.alert {
+    border: 1px solid $alert-border;
+    background: $alert-bg-color;
+    color: $alert-color;
+    
+    width: 80%;
+    height: 50px;
+    padding: 1rem;
+    margin: 0 auto;
+
+}

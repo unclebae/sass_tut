@@ -1,0 +1,11 @@
+.alert {
+  border: 1px solid rgba(85, 85, 85, 0.88);
+  background: yellow;
+  color: #c63538;
+  width: 80%;
+  height: 50px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style02.css.map */
