@@ -1,0 +1,60 @@
+$name: 'bye';
+$color: #eee;
+$hello: none;
+$bye: none;
+$background: '';
+
+@if $name == 'hello' {
+    $hello: block;
+    $background: #ccaa00;
+    $bye: none;
+}
+@else {
+    $hello: none;
+    $background: #00aaee;
+    $bye: block;
+}
+
+div.hello-box {
+    display: $hello;
+    background: $background;
+}
+
+div.bye-box {
+    display: $bye;
+    background: $background;
+}
+
+// each
+$colorset: ('primary':blue, 'second':pink, 'info':brown);
+
+@each $name, $color-val in $colorset {
+    .font-#{$name} {
+        color: $color-val;
+    }
+}
+
+// for
+$table-bg-color: #eee;
+
+@for $i from 1 to 4 {
+    @if ($i % 2) == 0 {
+        tr:nth-child(2n + #{$i}) {
+            background-color: $table-bg-color;
+        }
+    }
+    
+}
+
+// while
+$to: 5;
+$loop-value:0;
+
+@while $loop-value < $to {
+    .grad-background-#{$loop-value} {
+        background-color: lighten(brown, $loop-value * 10%);
+    }
+    $loop-value: $loop-value + 1
+
+}
+

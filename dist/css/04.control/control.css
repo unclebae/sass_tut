@@ -1,0 +1,47 @@
+div.hello-box {
+  display: none;
+  background: #00aaee;
+}
+
+div.bye-box {
+  display: block;
+  background: #00aaee;
+}
+
+.font-primary {
+  color: blue;
+}
+
+.font-second {
+  color: pink;
+}
+
+.font-info {
+  color: brown;
+}
+
+tr:nth-child(2n+2) {
+  background-color: #eee;
+}
+
+.grad-background-0 {
+  background-color: brown;
+}
+
+.grad-background-1 {
+  background-color: #cc3636;
+}
+
+.grad-background-2 {
+  background-color: #d65f5f;
+}
+
+.grad-background-3 {
+  background-color: #e18787;
+}
+
+.grad-background-4 {
+  background-color: #ebb0b0;
+}
+
+/*# sourceMappingURL=control.css.map */
