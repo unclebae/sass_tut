@@ -1,0 +1,29 @@
+
+$margin-increase: 10;
+$backgrounds:( blue, green, brown );
+
+@function indent($level) {
+    @return $level * $margin-increase * 1px;
+}
+
+@function colors($index, $backgrounds) {
+    @return nth($backgrounds, $index);
+}
+
+@function sum($padding-vals...) {
+    $sum: 0;
+    @each $value in $padding-vals {
+        $sum: ($sum + $value);
+    }
+
+    @return $sum;
+}
+
+@for $var from 1 through 3 {
+    .indent-#{$var} {
+        margin-left: indent($var);
+        background-color: colors($var, $backgrounds);
+        padding: sum(10px,15px);
+    }
+}
+
